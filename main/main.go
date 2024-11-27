@@ -1,13 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"piscine"
+    "fmt"
+
+    "piscine"
 )
 
 func main() {
-	fmt.Print(piscine.PrintIf("abcdefz"))
-	fmt.Print(piscine.PrintIf("abc"))
-	fmt.Print(piscine.PrintIf(""))
-	fmt.Print(piscine.PrintIf("14"))
+    fmt.Print(piscine.FirstWord("hello there"))
+    fmt.Print(piscine.FirstWord(""))
+    fmt.Print(piscine.FirstWord("hello   .........  bye"))
 }
