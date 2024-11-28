@@ -1,13 +1,17 @@
 package main
 
 import (
-    "fmt"
-
-    "piscine"
+	"fmt"
+	"piscine"
 )
 
 func main() {
-    fmt.Print(piscine.FirstWord("hello there"))
-    fmt.Print(piscine.FirstWord(""))
-    fmt.Print(piscine.FirstWord("hello   .........  bye"))
+	fmt.Println(piscine.Atoi("12345"))
+	fmt.Println(piscine.Atoi("0000000012345"))
+	fmt.Println(piscine.Atoi("012 345"))
+	fmt.Println(piscine.Atoi("Hello World!"))
+	fmt.Println(piscine.Atoi("+1234"))
+	fmt.Println(piscine.Atoi("-1234"))
+	fmt.Println(piscine.Atoi("++1234"))
+	fmt.Println(piscine.Atoi("--1234"))
 }
